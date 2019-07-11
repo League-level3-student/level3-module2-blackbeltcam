@@ -54,7 +54,7 @@ class _01_SwappingDigits {
 	//   *Double Hint* Use the method you already wrote in step 2 to sort it
 	public static int findMiddle(int[] arr) {
 		sortIntArray(arr);
+		return  (arr[arr.length/2]);
 		
-		return ;
 	}
 }
