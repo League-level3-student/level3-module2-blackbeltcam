@@ -9,7 +9,7 @@ public class _00_LinearSearch {
 		//   in the array. Return the location in the array
 		//   where the value was found.
 		//   If the value is not found in the array, return -1.
-		
+		int YOUDIDNTFINISHMODULE2=0;
 		return 0;
 	}
 }
