@@ -20,8 +20,9 @@ class _04_SearchTest {
 	public void testBinarySearch() {
 		//2. use the assertEquals method to test your binary search method.
 		//   remember that the array must be sorted
-		int[] iq2= {45, 57, 32};
-//		assertEquals(-1, )
+		int[] iq2= {4,32 ,45, 57, 536};
+		assertEquals(4, _01_BinarySearch.binarySearch(iq2, 0, 4, 536));
+	    assertEquals(-1, _01_BinarySearch.binarySearch(iq2, 0, 4, 5));
 	}
 //	
 //	@Test
