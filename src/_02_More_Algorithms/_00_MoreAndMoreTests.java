@@ -29,10 +29,18 @@ public class _00_MoreAndMoreTests {
         else
             return false;  
 	}
-	public static boolean isSquare(int x) {
+	public static boolean isSquare(double sq) {
+		double jj=Math.sqrt(sq);
 		
+		return (jj-Math.floor(jj)==0);
     } 
       
+	public static boolean isCube(double cb) {
+		double ty=Math.cbrt(cb);
+		
+		return (ty-Math.floor(ty)==0);
+		
+	}
     
    
 	 
@@ -72,18 +80,18 @@ public class _00_MoreAndMoreTests {
 
 	  }
 
-//	@Test
-//	  public void CubeTest() {
-//
-//	    assertTrue(isCube(27));
-//	    assertTrue(isCube(216));
-//	    assertTrue(isCube(729));
-//	    assertTrue(isCube(1));
-//	    assertFalse(isCube(3));
-//	    assertFalse(isCube(22));
-//	    assertFalse(isCube(143));
-//
-//	  }
+	@Test
+	  public void CubeTest() {
+
+	    assertTrue(isCube(27));
+	    assertTrue(isCube(216));
+	    assertTrue(isCube(729));
+	    assertTrue(isCube(1));
+	    assertFalse(isCube(3));
+	    assertFalse(isCube(22));
+	    assertFalse(isCube(143));
+
+	  }
 
 
 
