@@ -1,6 +1,10 @@
 package _02_More_Algorithms;
 
+import java.util.Collections;
 import java.util.List;
+
+import _00_Sorting_Algorithms.Sorter;
+import _00_Sorting_Algorithms.SortingVisualizer;
 
 public class Algorithms {
 	public static int findBrokenEgg(List<String> eggs) {
@@ -38,5 +42,49 @@ public class Algorithms {
 			}
 		}
 		return len;
+	}
+	public static boolean containsSOS(List<String> m) {
+			if(m.contains(" ... --- ... ")) {
+				return true;
+			}
+			return false;
+	}
+	public static List<Double> sortScores(List<Double> results) {
+		Collections.sort(results);
+		return results;
+			
+				
+			
+			
+//			// Insertion Sort is similar to Bubble Sort but a little more efficient
+//			//  You can use display.updateDisplay() to show the current
+//			//   progress on the graph.
+//			
+//					
+//				//1. make a for loop that starts at 1 and goes through 
+//				// the length of the array 
+//				for (int i = 1; i < results.size(); i++) {
+//					
+//				
+//					//2. make another for loop that starts at i and counts down
+//		        	//   while j is greater than 0
+//					for (int j = i; j > 0; j--) {
+//						
+//					
+//						//3. if the element at j is less than the element at j - 1,
+//		            	//   then swap them
+//						if (results.get(j)<results.get(j-1)) {
+//							int temp = results[j];
+//							array[j]= array[j-1];
+//							array[j-1] = temp;
+//							display.updateDisplay();
+//						}
+//					}
+//				}
+//				display.updateDisplay();
+//			}
+//		}
+		
+		
 	}
 }
