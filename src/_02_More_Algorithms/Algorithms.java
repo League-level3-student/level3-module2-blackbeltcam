@@ -54,37 +54,34 @@ public class Algorithms {
 		return results;
 			
 				
-			
-			
-//			// Insertion Sort is similar to Bubble Sort but a little more efficient
-//			//  You can use display.updateDisplay() to show the current
-//			//   progress on the graph.
-//			
-//					
-//				//1. make a for loop that starts at 1 and goes through 
-//				// the length of the array 
-//				for (int i = 1; i < results.size(); i++) {
-//					
-//				
-//					//2. make another for loop that starts at i and counts down
-//		        	//   while j is greater than 0
-//					for (int j = i; j > 0; j--) {
-//						
-//					
-//						//3. if the element at j is less than the element at j - 1,
-//		            	//   then swap them
-//						if (results.get(j)<results.get(j-1)) {
-//							int temp = results[j];
-//							array[j]= array[j-1];
-//							array[j-1] = temp;
-//							display.updateDisplay();
-//						}
-//					}
-//				}
-//				display.updateDisplay();
-//			}
-//		}
 		
 		
 	}
-}
+	public static List<String> sortDNA (List<String> unsortedSeqeunces) {
+		System.out.println(unsortedSeqeunces);
+		
+		int n = unsortedSeqeunces.size();
+		for (int i = 0; i < n - 1; i++) {
+			for (int j = 0; j < n - i - 1; j++) {
+				if (unsortedSeqeunces.get(j).length() > unsortedSeqeunces.get(j+1).length()) {
+					String temp = unsortedSeqeunces.get(j);
+					unsortedSeqeunces.set(j, unsortedSeqeunces.get(j+1)) ;
+					unsortedSeqeunces.set(j+1, temp);
+					
+				}
+			}
+		}
+	
+		System.out.println(unsortedSeqeunces);
+		return unsortedSeqeunces;
+		
+
+	}
+	//LIST<STRING>
+	public static void sortWords (List<String> words){
+		for(int i=0; i<words.size(); i++) {
+			int blah=words.get(i).compareTo(words.get(i+1));
+		}
+	}
+	}
+
