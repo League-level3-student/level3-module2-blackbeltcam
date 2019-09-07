@@ -58,7 +58,7 @@ public class Algorithms {
 		
 	}
 	public static List<String> sortDNA (List<String> unsortedSeqeunces) {
-		System.out.println(unsortedSeqeunces);
+		//System.out.println(unsortedSeqeunces);
 		
 		int n = unsortedSeqeunces.size();
 		for (int i = 0; i < n - 1; i++) {
@@ -72,16 +72,28 @@ public class Algorithms {
 			}
 		}
 	
-		System.out.println(unsortedSeqeunces);
+		//System.out.println(unsortedSeqeunces);
 		return unsortedSeqeunces;
 		
 
 	}
 	//LIST<STRING>
-	public static void sortWords (List<String> words){
+	public static List<String> sortWords (List<String> words){
+		int blah;
 		for(int i=0; i<words.size(); i++) {
-			int blah=words.get(i).compareTo(words.get(i+1));
+			
+			for(int j=0; j<words.size()-i-1; j++) {
+				blah=words.get(j).compareTo(words.get(j+1));
+				if(blah>0) {
+					String temp= words.get(j);
+					words.set(j, words.get(j+1));
+					words.set(j+1, temp);
+				}
+			}
+			
 		}
+		//System.out.println(words);
+		return words;
 	}
 	}
 
